@@ -271,6 +271,23 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+	{
+            "label": "Login",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "login"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ],
     "inputs": [
