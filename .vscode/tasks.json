@@ -252,10 +252,43 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+	{
+            "label": "Prepare FOTA",
+            "type": "shell",
+            "command": "zdm",
+            "args": [
+                "fota",
+                "prepare",
+                "."
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+	{
+            "label": "Login",
+            "type": "shell",
+            "command": "ztc",
+            "args": [
+                "login"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
-
-
-
     ],
     "inputs": [
     {
